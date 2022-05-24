@@ -1,5 +1,14 @@
 
 
+body {
+    background-color: rgb(44, 20, 66);
+
+}
+
+h1 {
+    background-color: blue;
+}
+
 
 
 .thursNights {
@@ -13,8 +22,6 @@ table, th, td {
     border-radius: 10px;
     color: rgb(51, 137, 218);
   }
-  th, td {
+th, td {
     background-color: #d7f4f5;
-  }
-
-.text
+}
