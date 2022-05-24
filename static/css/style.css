@@ -11,10 +11,10 @@ table, th, td {
     border: 1px solid white;
     border-collapse: collapse;
     border-radius: 10px;
-    color: rgb(129, 205, 235);
+    color: rgb(51, 137, 218);
   }
   th, td {
-    background-color: #93e9e9;
+    background-color: #d7f4f5;
   }
 
 table, th, td {
