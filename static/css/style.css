@@ -1,4 +1,10 @@
-#thursNights {
+body {
+    background-color: aquamarine;
+}
+
+
+
+.thursNights {
     text-align: center;
     background-color: lightskyblue;
 }
