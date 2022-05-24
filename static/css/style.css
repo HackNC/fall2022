@@ -10,14 +10,13 @@
 table, th, td, tr {
     border: 1px solid white;
     border-collapse: collapse;
-    border-radius: 10px;
     color: rgb(51, 137, 218);
   }
   th, td {
     background-color: #d7f4f5;
   }
 
-table, th, td, tr {
+th, td {
     border: 1px solid black;
     border-radius: 10px;
   }
