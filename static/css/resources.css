@@ -179,28 +179,28 @@
     bottom: -70px;
     left: -250px;
     width: 500px;
-    z-index:-5
   }
+.past-winners-header {
+  margin-bottom: 0;
+}
 
 a.slidelink {
   text-decoration: underline;
 }
 
-  div.slideshowContainer {
-    margin-left: 10%;
-    margin-right: 10%;
-    position: relative;
-    border-radius: .5em;
-    padding: 3%;
-    width: 80%;
-    margin-top: -48px;
+div.slideshowContainer {
+  margin-left: 10%;
+  margin-right: 10%;
+  position: relative;
+  border-radius: .5em;
+  width: 80%;
 }
 
 div.mySlides {
   width: 80%;
   margin-right: 10%;
   margin-left: 10%;
-  padding: 3%;
+  padding: 3% 0;
 }
 
 /* Next & previous buttons */
@@ -222,7 +222,7 @@ div.mySlides {
 
 img.slideshowimg {
     width: 90%;
-    margin-right: 10%;
+    margin: auto;
 }
 
 .slideshowimg {
@@ -232,6 +232,8 @@ img.slideshowimg {
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
+    z-index: -5;
+    position: relative;
 }
 
 .pieceinfo {
@@ -240,9 +242,7 @@ img.slideshowimg {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     text-align: center;
-    width: 30%;
 }
 
 .mySlides:hover .slideshowimg {
@@ -284,7 +284,9 @@ img.slideshowimg {
 .active, .dot:hover {
     background-color: #717171;
 }
-
+.mobile-bar {
+  z-index: 5;
+}
 /* translate animation */
 
 .fade {
@@ -295,9 +297,15 @@ img.slideshowimg {
 @keyframes moveRight {
     from {
         transform: translateX(-50px);
+        pointer-events: none;
+        position: relative;
+        z-index: -5;
     }
     to {
         transform: translateX(0);
+        pointer-events: none;
+        position: relative;
+        z-index: -5;
     }
 }
 
@@ -331,5 +339,25 @@ img.slideshowimg {
   .badge {
     display: none !important;
   }
-
+  .piecetext {
+    font-size: .5em;
   }
+  .pieceinfo {
+    width: 70%;
+  }
+  div.slideshowContainer {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  div.mySlides {
+    width: 100%;
+    margin: auto;
+  }
+  .prev {
+    padding-left: 0;
+  }
+  .next {
+    padding-right: 0;
+  }
+}
