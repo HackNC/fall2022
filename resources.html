@@ -22,6 +22,7 @@
     <script type="text/javascript" src="./static/js/mobile-menu.js"></script>
     <script type="text/javascript" src="./static/js/sticky-nav.js"></script>
     <script type="text/javascript" src="./static/js/toggle-panels.js"></script>
+    <script src="./static/js/slideshow.js" defer></script>
 </head>
 
 <a id="mlh-trust-badge" class="badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:15px;top:0;width:10%;z-index:10000" href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2023-season&utm_content=gray" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-gray.svg" alt="Major League Hacking 2023 Hackathon Season" style="width:100%"></a>
@@ -41,7 +42,7 @@
             <div>
                 <ul>
                     <li class="nav-item"><a class="nav-link" style="color: #012a3b" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" style="color: #012a3b" href="schedule.html">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" style="color: #012a3b" href="schedule.html#start_date=2022-11-01">Schedule</a></li>
                     <li class="nav-item"><a class="nav-link" style="color: #012a3b" href="resources.html">Resources</a></li>
                     <li class="nav-item"><a class="nav-link" href="https://tinyurl.com/hacknc2022" target="_blank">Register</a></li>
                 </ul>
@@ -57,7 +58,7 @@
                 <img src='./static/assets/images/icons/x.svg' id='hamburger-x' class='hamburger-x' onClick="closeMobileMenu()" />
                     <a class="mobile-nav-link" href="index.html">Home</a><br>
                     <a class="mobile-nav-link" href="about.html">About</a><br>
-                    <a class="mobile-nav-link" href="schedule.html">Schedule</a><br>
+                    <a class="mobile-nav-link" href="schedule.html#start_date=2022-11-01">Schedule</a><br>
                     <a class="mobile-nav-link" href="resources.html">Resources</a><br>
                     <a class="mobile-nav-link" href="https://tinyurl.com/hacknc2022" target="_blank">Register</a>
             </nav>
@@ -84,7 +85,104 @@
             <div class = "past-winner-section">
                 <div class="flex-container">
                     
-                <h3>Past Winners</h3>
+                <h3 class="past-winners-header">Past Winners</h3>
+
+                <p>Hover to find out more about these cool projects!</p>
+
+                <div class="slideshowContainer">
+                    <div class="mySlides fade">
+                            <a href="https://devpost.com/software/commently" class="slidelink"><img src="./static/assets/images/past-winners/commently.png"
+                                    class="slideshowimg" alt="2021 project winner"></a>
+                            <div class="pieceinfo">
+                                <div class="piecetext">
+                                    <a href="https://devpost.com/software/commently" class="slidelink" target="_blank">Commently</a> <br><br> 
+                                    <div class="boldtext">Prize(s): </div>HackNC Entertainment Track, Infosys Best Junior Hacker<br><br>
+                                    <div class="boldtext">Team: </div>Aan Patel, Yufei Dong, and Irene<br><br>
+                                    Originally made to remedy disabled YouTube comments, 
+                                    Commently enables people to comment on any webpage, enabling them to find community and 
+                                    have good times wherever they go, all over the internet.
+                                </div>
+                            </div>
+                    </div>
+                    <div class="mySlides fade">
+                            <a href="https://devpost.com/software/find-my-study-spot" class="slidelink"><img
+                                    src="static/assets/images/past-winners/findmy.png" class="slideshowimg" alt="2021 project winner"></a>
+                            <div class="pieceinfo">
+                                <div class="piecetext">
+                                    <a href="https://devpost.com/software/find-my-study-spot" class="slidelink" target="_blank">Find My Study Spot</a><br><br> 
+                                    <div class="boldtext">Prize(s): </div>HackNC Social Good Track<br><br>
+                                    <div class="boldtext">Team: </div>Dheya Madhani, Vivian Deng, and Meghan Sun<br><br>
+                                    Use this website to find the perfect study spot!
+                                    This website provides ratings for study spots based on accessibility
+                                    features, COVID precautions, and more to find a place fit for your concerns.
+                                </div>
+                            </div>
+                    </div>
+                    <div class="mySlides fade">
+                            <a href="https://devpost.com/software/reviewer-io-su5k0l" class="slidelink"><img src="static/assets/images//past-winners/reviewer2.png"
+                                    class="slideshowimg" alt="2020 project winner"></a>
+                            <div class="pieceinfo">
+                                <div class="piecetext"><a href="https://devpost.com/software/reviewer-io-su5k0l" class="slidelink" target="_blank">Reviewer.io</a><br><br> 
+                                    <div class="boldtext">Prize(s): </div>Wolfram Award Best Hack for Education - Explorer, Top 20 Hack<br><br>
+                                    <div class="boldtext">Team: </div>Mathew Chanda, Sankalp Boorugu, Ananya Gupta, and Harshal Suthar<br><br>
+                                    Reviewer.io is a digital open platform 
+                                    that allows users to ask questions and receive answers from professors and 
+                                    past students. Reviewer.io gives the necessary information for students to 
+                                    see if a course is an ideal course that fits their needs and requirements.</div>
+                            </div>
+                    </div>
+                    <div class="mySlides fade">
+                        
+                            <a href="https://devpost.com/software/drizzle" class="slidelink"><img src="static/assets/images/past-winners/drizzle.jpg"
+                                    class="slideshowimg" alt="2020 project winnner"></a>
+                            <div class="pieceinfo">
+                                <div class="piecetext"><a href="https://devpost.com/software/drizzle" class="slidelink" target="_blank">drizzle</a><br><br> 
+                                    <div class="boldtext">Prize(s): </div>1st Place Overall, Wolfram Award, Best General Hack - Explorer, Top 20 Hack<br><br>
+
+                                    <div class="boldtext">Team: </div>Ben Stewart and Brian Rui<br><br>
+                                    drizzle uses a variety of instrumental samples and machine learning algorithms to generate calming Lo-Fi hip-hop music. It also provides beautiful images that match your time and weather.</div>
+                            </div>
+                    </div>
+                    <div class="mySlides fade">  
+                            <a href="https://devpost.com/software/posturenet-z4omku" class="slidelink"><img src="static/assets/images/past-winners/posture.png" 
+                                class="slideshowimg" alt="2019 project winner"></a>
+                            <div class="pieceinfo">
+                                <div class="piecetext"><a href="https://devpost.com/software/posturenet-z4omku" class="slidelink" target="_blank">PostureNet</a></br><br> 
+                                    <div class="boldtext">Prize(s): </div>Best Health Hack<br><br>
+                                    <div class="boldtext">Team: </div>Matthew Finley and David Lu<br><br>
+                                    PostureNet utilizes Machine Learning to 
+                                    improve your posture. It accomplishes this with the help of the Tensorflow 
+                                    and PoseNet frameworks to gather human posture keypoints, which it then runs 
+                                    calculations on to find specific areas of weakness in your posture.</div>
+                            </div>
+                    </div>
+                    <div class="mySlides fade">
+                            <a href="https://devpost.com/software/the-great-lampini-8iqcpr" class="slidelink"><img src="static/assets/images/past-winners/lamp.jpg" class="slideshowimg"
+                                alt="2018 project winner"></a>
+                            <div class="pieceinfo">
+                                <div class="piecetext"><a href="https://devpost.com/software/the-great-lampini-8iqcpr" class="slidelink" target="_blank">The Great Lampini</a></br><br> 
+                                    <div class="boldtext">Prize(s): </div>The Wolfram Award<br><br>
+                                    <div class="boldtext">Team: </div>Vincent Yang, Jamie Weathers, and Samy Bencherif<br><br>
+                                    The lamp uses speech recognition to 
+                                    parse commands to turn it on or off, additionally it uses sensors and algorithms 
+                                    to determine statistics related to power consumption.</div>
+                            </div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+                <!-- <div class="background-container">
+                    <img src="static/assets/images/blob1.svg" class="background">
+                    <img src="static/assets/images/blob2.svg" class="background">
+                </div> -->
 
                 </div>
                     <div class = "past-winner-container">
@@ -136,13 +234,13 @@
                     <div class = "track-box" onClick="togglepanel1()">
                         <h1 class="track">General</h1>
                         <div class="panell" id="panel1">
-                            <p>Think about some common problems that we face in today's world and possible solutions to them. Some common focus areas are health, sustainability, finance, and entertainment.</p>
+                            <p>What are some problems in today's world? What can be improved / more efficient in my daily routine? Where can technology improve people's lives? What target audience or opportunity area do I want to focus on?</p>
                         </div>
                     </div>
                     <div class = "track-box" onClick="togglepanel2()">
                         <h1 class="track">Beginners</h1>
                         <div class="panell" id="panel2">
-                        <p>If you're having trouble thinking of a beginner-friendly project, you could make a simple game, mobile app, or website! Check out our simple workshops and coding resources for great starting points.</p>
+                        <p>What is a simple website or app that doesn't exist but people would find useful? What is a simple game that people would enjoy playing? How can I use what the workshops taught me to make a cool project?</p>
                         </div>
                     </div>
                 </div>
@@ -203,7 +301,7 @@
                 <h2 class="footer-text">Site Map</h2>
                 <a class="footer-link" href="./index.html">Home</a><br>
                 <a class="footer-link" href="./about.html">About</a><br>
-                <a class="footer-link" href="./schedule.html">Schedule</a><br>
+                <a class="footer-link" href="./schedule.html#start_date=2022-11-01">Schedule</a><br>
                 <a class="footer-link" href="./resources.html">Resources</a><br>
     
             </div>
