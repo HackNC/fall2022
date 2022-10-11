@@ -186,6 +186,9 @@
 
 a.slidelink {
   text-decoration: underline;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 div.slideshowContainer {
@@ -245,6 +248,10 @@ img.slideshowimg {
     text-align: center;
 }
 
+.boldtext {
+  font-weight: bold;
+}
+
 .mySlides:hover .slideshowimg {
     opacity: 0.3;
 }
@@ -258,6 +265,8 @@ img.slideshowimg {
     color: white;
     font-size: 1em;
     padding: 1em 2em;
+    text-align: left;
+    border-radius: 25px;
 }
 
 .next {
@@ -359,5 +368,10 @@ img.slideshowimg {
   }
   .next {
     padding-right: 0;
+  }
+
+  .resource-button {
+    width: 80vw;
+    height: 20vw;
   }
 }
