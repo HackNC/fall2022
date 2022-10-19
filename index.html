@@ -273,51 +273,30 @@
 
         <div class="section">
             <div class="flex-container">
-                <h3>Tracks</h3>
-                <div class="past-winner-container">
-                    <div class="track-box" onClick="togglepanel1()">
-                        <h1 class="track">General</h1>
-                        <div class="panell" id="panel1">
-                            <p>Think about some common problems that we face in today's world and possible solutions to
-                                them. Some common focus areas are health, sustainability, finance, and entertainment.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="track-box" onClick="togglepanel2()">
-                        <h1 class="track">Beginners</h1>
-                        <div class="panell" id="panel2">
-                            <p>If you're having trouble thinking of a beginner-friendly project, you could make a simple
-                                game, mobile app, or website! Check out our simple workshops and coding resources for
-                                great starting points.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!--<div class="section">
-            <div class="flex-container">
                 <h3>Sponsors</h3>
                 <p class="sponsor-sec">Interested in sponsoring HackNC? Email us at <a
                         href="mailto:sponsorship@hacknc.com">sponsorship@hacknc.com</a>.</p>
             </div>
             <br>
             <div class="sponsor-container">
-                <a href="https://www.accenture.com/" target="_blank"><img class="sponsor-img"
-                        src="./static/assets/images/sponsors/accenture.png"></a>
-                <a href="https://www.db.com/" target="_blank"><img class="sponsor-img"
-                        src="./static/assets/images/sponsors/deutschebank.jpg"></a>
+                <a href="https://www.capitalone.com/" target="_blank"><img class="sponsor-img"
+                        src="./static/assets/images/sponsors/C1.png"></a>
                 <a href="https://www.genesys.com/" target="_blank"><img class="sponsor-img"
-                        src="./static/assets/images/sponsors/genesys.png"></a>
-                <a href="https://ktp.cs.unc.edu/" target="_blank"><img class="sponsor-img"
-                        src="./static/assets/images/sponsors/ktp.jpg"></a>
-                <a href="https://www.optum.com/" target="_blank"><img class="sponsor-img"
-                        src="./static/assets/images/sponsors/optum.png"></a>
-                <a href="https://ultrapress.com/" target="_blank"><img class="sponsor-img"
-                        src="./static/assets/images/sponsors/ultrapress.png"></a>
-            </div>
-        </div>-->
+                        src="./static/assets/images/sponsors/Genesys.png"></a>
+                <a href="https://www.infosys.com/" target="_blank"><img class="sponsor-img"
+                        src="./static/assets/images/sponsors/Infosys.png"></a>
+                <a href="https://www.deere.com/en/index.html" target="_blank"><img class="sponsor-img"
+                        src="./static/assets/images/sponsors/JohnDeere.png"></a>
+                <a href="https://lucid.co/" target="_blank"><img class="sponsor-img"
+                        src="./static/assets/images/sponsors/Lucid.png"></a>
+                <a href="https://www.mlp.com/" target="_blank"><img class="sponsor-img"
+                        src="./static/assets/images/sponsors/Millennium.PNG"></a>
+                <a href="https://www.pendo.io/" target="_blank"><img class="sponsor-img"
+                    src="./static/assets/images/sponsors/Pendo.png"></a>
+                <a href="https://www.wellsfargo.com/" target="_blank"><img class="sponsor-img"
+                    src="./static/assets/images/sponsors/WellsFargo.png"></a>
+    </div>
+        </div>
 
         <div class="footer">
 
@@ -365,35 +344,6 @@
         </div>
 
     </main>
-
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-        var questions = document.getElementsByClassName("panel");
-
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var shell = this.children[0];
-                shell.classList.toggle("spin");
-                var panel = this.nextElementSibling;
-                let maxHeight = window.getComputedStyle(panel).maxHeight;
-                console.log(maxHeight);
-                console.log(panel.style.maxHeight)
-                if (maxHeight !== '0px') {
-                    panel.style.maxHeight = 0;
-                } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                    for (let j= 0; j<questions.length; j++) {
-                        if (i !== j && window.getComputedStyle(questions[j]).maxHeight !== '0px') {
-                            questions[j].style.maxHeight = 0;
-                            questions[j].previousElementSibling.classList.toggle("active")
-                        }
-                    }
-                }
-            });
-        }
-    </script>
 
 </body>
 
