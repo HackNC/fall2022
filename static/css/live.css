@@ -102,3 +102,25 @@ th {
     margin: 0;
     font-size: 1.5rem;
   }
+
+  .prize-live-section {
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-top: 1.5rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    .social-button {
+      width: 70vw;
+      height: 11vh;
+    }
+
+    .prize-container {
+      width: 70vw;
+    }
+
+    .prize-live-section {
+      padding-left: 5vw;
+    }
+  }
