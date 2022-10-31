@@ -489,6 +489,7 @@ top:1px;
     .live-button {
       width: 80vw;
       height: 20vw;
+      font-size: 1.5rem;
       left:10vw;
     }
 
