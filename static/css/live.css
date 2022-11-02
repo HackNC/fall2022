@@ -34,7 +34,6 @@
 
 .grant-table{
     border-collapse: collapse;
-    width: 50%;
     text-align: center;
 }
 
@@ -48,11 +47,6 @@ th {
   background-color: #83DEF1;
   color: #012a3b;
 }
-.table-row-odd {
-    background: #f2f2f2; }
-  
-.table-row-even {
-    background: white }
 
 .live-section {
     padding-left: 15vw;
@@ -114,8 +108,8 @@ th {
   .calendar {
     margin-left: 5%;
     margin-right: 5%;
-  
-    box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.2) ,0px 3px 7px rgba(0, 0, 0, 0.1);
+    background-color: inherit;
+    box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.2) , 0px 3px 7px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
   }
   .wrap {
@@ -143,7 +137,6 @@ th {
       position: relative;
   }
   table {
-    background: #fff;
     width: 100%;
     height: 100%;
     border-collapse: collapse;
@@ -173,7 +166,6 @@ th {
   
   thead {
       z-index: 2;
-      background: white;
       border-bottom: 2px solid #ddd;
   
   }
@@ -251,10 +243,15 @@ th {
   .event-title {
     padding:auto;
     font-size: 1em;
+    margin-bottom: 0;
   }
 
-  .event-location {
+  .event-description {
     font-size: .8em;
+    margin-top:0;
+  }
+  .no-description {
+    margin-bottom: 1em;
   }
 
   .overlap {
@@ -266,8 +263,36 @@ th {
   }
   .right {
     margin-left: 51%;
-
   }
+  .legend-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .legend-item {
+    display:flex;
+  }
+  .color-box {
+    height: 20px;
+    width: 20px;
+    margin-top: 1.4em;
+    border-radius: 5px;
+  }
+
+.food {
+  background-color: #006a94;
+}
+
+.activity {
+  background-color: #3ebdc8;
+}
+
+.events {
+  background-color:#2999bc;
+}
+
+.workshop {
+  background-color: #83def1
+}
   
   button.secondary {
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -318,6 +343,7 @@ th {
   align-items: center;
   align-content: center;
   justify-content: center;
+  margin-top:-20px;
   font-family: "DINPro", "Helvetica Neue",
   }
 
@@ -327,4 +353,21 @@ th {
     margin-top:10px;
     margin-bottom: 10px;
     font-size: 1.5em;
+  }
+  .workshop-schedule {
+    flex-direction: column;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  }
+  @media only screen and (max-width: 600px) {
+    td:nth-child(2), td:nth-child(3) {
+      display: none
+    }
+    th:nth-child(2), th:nth-child(3) {
+      display: none
+    }
   }
