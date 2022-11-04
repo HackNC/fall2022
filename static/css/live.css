@@ -139,6 +139,15 @@ th {
     table-layout: fixed;
   
   }
+
+  .faq-text-bold {
+    margin: auto;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0.25rem;
+    padding-left: 0.75rem;
+    font-weight: bold;
+  }
   
   
   
@@ -364,5 +373,9 @@ th {
     }
     .offset th:nth-child(2) {
       display: none
+    }
+
+    .faq-text {
+      margin-top: 0.5rem !important;
     }
   }

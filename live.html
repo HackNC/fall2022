@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="static/css/footer.css">
     <link rel="stylesheet" href="static/css/schedule.css">
     <link rel="stylesheet" href="static/css/live.css">
+    <link rel="stylesheet" href="static/css/home.css">
 
     <script type='text/javascript' src='./static/js/config.js'></script>
 
@@ -366,11 +367,11 @@
                 <div class='flex'>
                     <table class='grant-table'>
                         <tr><th>Workshop</th><th>Place</th><th>Time</th></tr>
-                        <tr class="table-row-even"><td>Beginner Workshop #2 React Web App</td><td>Woollen 301</td><td>11 AM - 12 PM</td></tr>
-                        <tr class="table-row-odd"><td>Beginner Workshop #3 Basic Game</td><td>Woollen 302</td><td>11 AM - 12 PM</td></tr>
-                        <tr class="table-row-even"><td>Augmented and Virtual Reality Workshop</td><td>Woollen 301</td><td>3 - 4 PM</td></tr>
-                        <tr class="table-row-odd"><td>Intro to Data Analytics</td><td>Woollen 303</td><td>3 - 4 PM</td></tr>
-                        <tr class="table-row-even"><td>API Basics Workshop</td><td>Woollen 302</td><td>4 - 5 PM</td></tr>
+                        <tr class="table-row-even"><td>Basic React Web App Workshop</td><td>Woollen 301</td><td>11 AM - 12 PM</td></tr>
+                        <tr class="table-row-odd"><td>Basic Game Workshp</td><td>Woollen 302</td><td>11 AM - 12 PM</td></tr>
+                        <tr class="table-row-even"><td>Augmented and Virtual Reality Workshop</td><td>Woollen 301</td><td>3 PM - 4 PM</td></tr>
+                        <tr class="table-row-odd"><td>Intro to Data Analytics Workshop</td><td>Woollen 303</td><td>3 PM - 4 PM</td></tr>
+                        <tr class="table-row-even"><td>API Basics Workshop</td><td>Woollen 302</td><td>4 PM - 5 PM</td></tr>
                     </table>
             </div>
             </div>
@@ -392,21 +393,7 @@
                 var map = document.getElementById('location');
                 map.setAttribute('src', url);
             </script>
-        
-        <!--   
-            <div id = "schedule">
-                <div class = "live-section">
-                    <h4 style="text-align:center">Schedule</h4>
-                    <p style="font-size: 1rem;">Hackers, please plan to arrive before 9am Saturday.</p>
-                    <p style="font-size: 1rem;">Overnight accommodation is provided on Friday for those traveling long distances.</p>
-                        <div id="sched">
-                            <script src="https://events.timely.fun/embed.js" data-src="https://events.timely.fun/40nk1m96/?range=custom&start_date=2022-11-02&end_date=2022-11-06" data-max-height="0"  id="timely_script" class="timely-script"></script>
-                        </div>
-                        <p style="font-size: 1rem;">*Schedule is subject to change</p>
-                </div>
-                
-            </div>
-        -->
+
             <div id = "travel">
                 <div class = "live-section">
                         <h4 style="text-align:center">Travel</h4>
@@ -416,115 +403,143 @@
                             <li style="display:block;"><a class="link" href="https://www.google.com/maps/dir/Cobb+Parking+Deck,+Chapel+Hill,+NC+27514/Woollen+Gymnasium,+South+Road,+Chapel+Hill,+NC/@35.9107229,-79.0479376,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x89acc2ea68ddf24b:0x38f6620f02eadfae!2m2!1d-79.0456143!2d35.911746!1m5!1m1!1s0x89acc2ebb64d923f:0x46d0fc575842e791!2m2!1d-79.046014!2d35.9096999!3e2">Cobb Parking Deck</a></li>
                             <li style="display:block;"><a class="link" href="https://www.google.com/maps/dir/Bell+Tower+Parking+Deck,+Chapel+Hill,+NC/Woollen+Gymnasium,+South+Road,+Chapel+Hill,+NC/@35.9082111,-79.0502803,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x89acc2eedc3bd00f:0x2dd3a16fc7f5b0c9!2m2!1d-79.0500641!2d35.9067103!1m5!1m1!1s0x89acc2ebb64d923f:0x46d0fc575842e791!2m2!1d-79.046014!2d35.9096999!3e2">Bell Tower Parking Deck</a></li>
                         </ul> 
-                        <h5>Carpools</h5>
-                        <p style="font-size: 1rem;">If you were accepted, your carpool is automatically eligible for reimbursement of the value detailed below, which roughly corresponds to the round trip cost of gas. Limit one per carpool. Qualifications for carpool grants are as follows:</p>
-                        <ol>
-                            <li style="display: list-item;">RSVP via the link in your email</li>
-                            <li style="display: list-item;">Drive yourself and at least 2 passengers to HackNC.</li>
-                            <li style="display: list-item;">Submit a project at the end of HackNC.</li>
-                            <li style="display: list-item;">Submit a copy of gas receipts.</li>
-                        </ol>
-                        <h5>Carpool Amounts</h5>
-                        <div class='flex'>
-                                <table class='grant-table'>
-                                    <tr><th>One-way distance</th><th>Grant Amount</th></tr>
-                                    <tr class="table-row-even"><td>0 - 50 miles</td><td>$0</td></tr>
-                                    <tr class="table-row-odd"><td>51 - 100 miles</td><td>$20</td></tr>
-                                    <tr class="table-row-even"><td>101 - 200 miles</td><td>$40</td></tr>
-                                    <tr class="table-row-odd"><td>201 - 300 miles</td><td>$60</td></tr>
-                                    <tr class="table-row-even"><td>301 - 400 miles</td><td>$80</td></tr>
-                                    <tr class="table-row-odd"><td>401+ miles</td><td>$100</td></tr>
-                                </table>
-                        </div>
-                <h5>Travel Vouchers</h5>
-                <p style="font-size: 1rem;">HackNC has a limited number of grants available to supplement the cost of bus/train tickets. These vouchers may be available after all carpool requests are processed on a first-come, first-served basis.</p>
-                <p style="font-size: 1rem;">Note that travel grants are only available to hackers traveling from OUTSIDE the NC Triangle (UNC / NC State / Duke / etc.). Unfortunately, we will not be able to reimburse air travel this year.</p>
             </div>
             </div>
-                
-            <div id = "prizes">
-                <div class="live-section" style="font-size: 1rem; margin-bottom: 5rem;">
-                    <h4 style="text-align: center;">Prizes</h4>
-                    <div class='row' >
-                        <div class="col m12 l4 center">
-                            <div class='prize-container'>
-                                    <div class='prize-text'>
-                                        <h5 class="prize-title">General - 1st Place</h5>
-                                        <p>Full HD Monitor</p>
-                                    </div>
+            
+            <div class="section">
+                <div class="flex-container">
+                    <h3>Prizes</h3>
+                    <div class="row">
+                        <div class="col">
+                            <div class="faq-container accordion">
+                                <img class="faq-icon" src="./static/assets/images/icons/shell.png"/>
+                                <p class = "faq-text-bold">General (1st Place)</p><br>
+                                <p class="faq-text" style="margin-left: 2.25rem;">Full HD Monitor</p>
                             </div>
                         </div>
-                        <div class="col m12 l4 center">
-                            <div class='prize-container'>
-                                    <div class='prize-text'>
-                                        <h5 class="prize-title">General - 2nd Place</h5>
-                                        <p>Smart Speaker</p>
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="col m12 l4 center">
-                            <div class='prize-container'>
-                                    <div class='prize-text'>
-                                        <h5 class="prize-title">Best Game Hack</h5>
-                                        <p>Mechanical Keyboard</p>
-                                    </div>
+                        <div class="col">
+                            <div class="faq-container accordion">
+                                <img class="faq-icon" src="./static/assets/images/icons/shell.png"/>
+                                <p class = "faq-text-bold">General (2nd Place)</p><br>
+                                <p class="faq-text" style="margin-left: 2.25rem;">Smart Speaker</p>
                             </div>
                         </div>
                     </div>
-                    <div class='row'>
-                        <div class="col m12 l4 offset center">
-                            <div class='prize-container'>
-                                    <div class='prize-text'>
-                                        <h5 class="prize-title">Beginner - 1st Place</h5>
-                                        <p>Full HD Monitor</p>
-                                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="faq-container accordion">
+                                <img class="faq-icon" src="./static/assets/images/icons/shell.png"/>
+                                <p class = "faq-text-bold">Beginner (1st Place)</p><br>
+                                <p class="faq-text" style="margin-left: 2.25rem;">Full HD Monitor</p>
                             </div>
                         </div>
-                        <div class="col m12 l4 offset center">
-                            <div class='prize-container'>
-                                    <div class='prize-text'>
-                                        <h5 class="prize-title">Beginner - 2nd Place</h5>
-                                        <p>Smart Speaker</p>
-                                    </div>
+                        <div class="col">
+                            <div class="faq-container accordion">
+                                <img class="faq-icon" src="./static/assets/images/icons/shell.png"/>
+                                <p class = "faq-text-bold">Beginner (2nd Place)</p><br>
+                                <p class="faq-text" style="margin-left: 2.25rem;">Smart Speaker</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="faq-container accordion">
+                                <img class="faq-icon" src="./static/assets/images/icons/shell.png"/>
+                                <p class = "faq-text-bold">Best Game Hack</p><br>
+                                <p class="faq-text" style="margin-left: 2.25rem;">Mechanical Keyboard</p>
                             </div>
                         </div>
-                        <div class="col m12 l4 offset center">
-                            <div class='prize-container'>
-                                    <div class='prize-text'>
-                                        <h5 class="prize-title">Best UX Hack</h5>
-                                        <p>Drawing Tablet</p>
-                                    </div>
+                        <div class="col">
+                            <div class="faq-container accordion">
+                                <img class="faq-icon" src="./static/assets/images/icons/shell.png"/>
+                                <p class = "faq-text-bold">Best UX Hack</p><br>
+                                <p class="faq-text" style="margin-left: 2.25rem;">Drawing Tablet</p>
                             </div>
                         </div>
                     </div>
-                    <div class='row'>
-                        <div class="col m12 l4 offset center">
-                            <div class='prize-container'>
-                                    <div class='prize-text'>
-                                        <h5 class="prize-title">Meme Competition - 1st Place</h5>
-                                        <p>Waterproof Bluetooth Speaker</p>
-                                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="faq-container accordion">
+                                <img class="faq-icon" src="./static/assets/images/icons/shell.png"/>
+                                <p class = "faq-text-bold">Best Mobile Hack</p><br>
+                                <p class="faq-text" style="margin-left: 2.25rem;">Headset</p>
                             </div>
                         </div>
-                        <div class="col m12 l4 offset center">
-                            <div class='prize-container'>
-                                    <div class='prize-text'>
-                                        <h5 class="prize-title">Meme Competition - 2nd Place</h5>
-                                        <p>Tile Bluetooth Tracker</p>
-                                    </div>
+                        <div class="col">
+                            <div class="faq-container accordion">
+                                <img class="faq-icon" src="./static/assets/images/icons/shell.png"/>
+                                <p class = "faq-text-bold">Meme Competition (1st Place)</p><br>
+                                <p class="faq-text" style="margin-left: 2.25rem;">Waterproof Bluetooth Speaker</p>
                             </div>
                         </div>
-                        <div class="col m12 l4 offset center">
-                            <div class='prize-container'>
-                                    <div class='prize-text'>
-                                        <h5 class="prize-title">Meme Competition - 3rd Place</h5>
-                                        <p>Rocketbook Smart Reusable Notebook</p>
-                                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="faq-container accordion">
+                                <img class="faq-icon" src="./static/assets/images/icons/shell.png"/>
+                                <p class = "faq-text-bold">Meme Competition (2nd Place)</p><br>
+                                <p class="faq-text" style="margin-left: 2.25rem;">Tile Bluetooth Tracker</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="faq-container accordion">
+                                <img class="faq-icon" src="./static/assets/images/icons/shell.png"/>
+                                <p class = "faq-text-bold">Meme Competition (3rd Place)</p><br>
+                                <p class="faq-text" style="margin-left: 2.25rem;">Rocketbook Smart Reusable Notebook</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="faq-container accordion">
+                                <img class="faq-icon" src="./static/assets/images/icons/shell.png"/>
+                                <p class = "faq-text-bold">Best Financial Hack (Capital One)</p><br>
+                                <p class="faq-text" style="margin-left: 2.25rem;">Amazon Gift Card</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="faq-container accordion">
+                                <img class="faq-icon" src="./static/assets/images/icons/shell.png"/>
+                                <p class = "faq-text-bold">Best CX Hack (Genesys)</p><br>
+                                <p class="faq-text" style="margin-left: 2.25rem;">Amex Giftcards + Swag</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="faq-container accordion">
+                                <img class="faq-icon" src="./static/assets/images/icons/shell.png"/>
+                                <p class = "faq-text-bold">Best Junior Hackers (Infosys)</p><br>
+                                <p class="faq-text" style="margin-left: 2.25rem;">Final Round Interview for Internship</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="faq-container accordion">
+                                <img class="faq-icon" src="./static/assets/images/icons/shell.png"/>
+                                <p class = "faq-text-bold">Best Infosys Hack (Infosys)</p><br>
+                                <p class="faq-text" style="margin-left: 2.25rem;">Infosys InStep Goodie Bag</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="faq-container accordion">
+                                <img class="faq-icon" src="./static/assets/images/icons/shell.png"/>
+                                <p class = "faq-text-bold">Best Agricultural Hack (John Deere)</p><br>
+                                <p class="faq-text" style="margin-left: 2.25rem;">$100 Electronic Visa Gift Cards</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="faq-container accordion">
+                                <img class="faq-icon" src="./static/assets/images/icons/shell.png"/>
+                                <p class = "faq-text-bold">TBD (Lucid)</p><br>
+                                <p class="faq-text" style="margin-left: 2.25rem;">TBD</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>  
+            </div>
             
             <div class="footer">
 
