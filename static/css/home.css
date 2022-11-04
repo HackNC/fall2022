@@ -16,6 +16,26 @@ canvas {
   margin-bottom: -2vh;
 }
 
+.live-button {
+  position: absolute;
+  height: 7vw;
+  width: 26vw;
+  background-color: #2999BC;
+  color: white;
+  border-radius: 25px;
+  left: 37vw;
+  top: 80vh;
+  z-index: 10;
+  font-size: 1.7rem;
+  font-family: 'Montserrat', sans-serif;
+  border: 2px solid #012a3b;
+}
+
+.live-button:hover {
+  background-color: #006A94;
+  cursor: pointer;
+}
+
 .landing {
   background-image: url("../assets/images/background.png");
   background-size: cover;
@@ -464,6 +484,13 @@ top:1px;
 
     canvas {
       height: 20vh;
+    }
+
+    .live-button {
+      width: 80vw;
+      height: 20vw;
+      font-size: 1.5rem;
+      left:10vw;
     }
 
   }
